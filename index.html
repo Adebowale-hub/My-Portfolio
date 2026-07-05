@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adebowale — MERN Stack & Full Stack Developer</title>
+  <meta name="description" content="Adebowale is a Full Stack & MERN Stack Developer crafting high-performance web applications with React, Node.js, MongoDB, Figma, and WordPress." />
+  <meta name="keywords" content="Full Stack Developer, MERN Stack, React, Node.js, MongoDB, Figma, WordPress, Web Developer Nigeria" />
+  <meta property="og:title" content="Adebowale — Full Stack Developer" />
+  <meta property="og:description" content="Building performant, beautiful web experiences." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Feather Icons via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ═══════════════════════════════════════ NAV ═══════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Adebowale.</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO ═══════ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+
+    <!-- Van Gogh swirl decorative SVG -->
+    <div class="hero-swirl">
+      <svg viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;opacity:0.06;position:absolute;inset:0;">
+        <path d="M0,400 Q200,100 400,400 T800,400 T1200,400 T1600,400" stroke="#3AACB5" stroke-width="1.5" fill="none"/>
+        <path d="M0,350 Q250,50 500,350 T1000,350 T1500,350" stroke="#F5C518" stroke-width="1" fill="none"/>
+        <path d="M0,450 Q180,150 360,450 T720,450 T1080,450 T1440,450" stroke="#2A7B8E" stroke-width="1" fill="none"/>
+        <path d="M0,300 Q300,0 600,300 T1200,300 T1800,300" stroke="#1B3A6B" stroke-width="0.8" fill="none"/>
+        <path d="M100,600 Q400,200 700,600 T1300,600" stroke="#C47A1E" stroke-width="0.8" fill="none"/>
+        <circle cx="1100" cy="180" r="3" fill="#F5C518" opacity="0.6"/>
+        <circle cx="900" cy="120" r="2" fill="#F5C518" opacity="0.5"/>
+        <circle cx="1200" cy="250" r="2.5" fill="#FFD95A" opacity="0.5"/>
+        <circle cx="300" cy="700" r="2" fill="#3AACB5" opacity="0.4"/>
+        <circle cx="150" cy="550" r="3" fill="#3AACB5" opacity="0.3"/>
+        <circle cx="1350" cy="500" r="2" fill="#F5C518" opacity="0.4"/>
+      </svg>
+    </div>
+
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot-pulse"></span>
+        Available for Work
+      </div>
+
+      <h1 class="hero-name">Adebowale</h1>
+
+      <p class="hero-title">
+        <strong><span id="typed-text">MERN Stack Developer</span></strong><span id="typed-cursor" style="color:var(--teal-light);animation:pls 1s infinite;">|</span>
+        <br />
+        Crafting high-performance web apps with <strong>React · Node.js · MongoDB</strong><br/>
+        and beautiful interfaces in <strong>Figma &amp; WordPress</strong>
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary"><span>View My Work</span></a>
+        <a href="#contact"  class="btn-outline">Let's Talk →</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════════════════ ABOUT ═══════ -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+
+        <!-- Left: image -->
+        <div class="about-img-wrap reveal">
+          <div class="about-img-box">
+            <img src="Van Gogh's Lego creations， Wallpapers.jpg" alt="Adebowale — Developer" />
+          </div>
+          <div class="accent-box-1"></div>
+          <div class="accent-box-2"></div>
+          <div class="stat-row">
+            <div class="stat-card">
+              <div class="stat-num">4+</div>
+              <div class="stat-lbl">Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">15+</div>
+              <div class="stat-lbl">Projects Built</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">10+</div>
+              <div class="stat-lbl">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: text -->
+        <div class="about-text reveal reveal-d2">
+          <div class="section-header">
+            <p class="section-label">About Me</p>
+            <h2 class="section-title">Turning ideas into<br/>digital reality</h2>
+          </div>
+          <p class="about-bio">
+            Hey! I'm <strong>Adebowale</strong> — a passionate Full Stack Developer specializing in the 
+            <strong>MERN stack</strong> (MongoDB, Express.js, React, Node.js). I build scalable, 
+            performant web applications from the ground up, combining clean backend architecture with 
+            intuitive, pixel-perfect frontends.
+          </p>
+          <p class="about-bio">
+            Beyond code, I design UI/UX prototypes in <strong>Figma</strong> and develop 
+            <strong>WordPress</strong> solutions for clients who need content-driven sites. 
+            I love the intersection of art and engineering — where logic meets creativity.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag">Problem Solver</span>
+            <span class="about-tag">Clean Code</span>
+            <span class="about-tag">Responsive Design</span>
+            <span class="about-tag">API Integration</span>
+            <span class="about-tag">Team Player</span>
+            <span class="about-tag">Always Learning</span>
+          </div>
+          <br/>
+          <a href="#contact" class="btn-primary" style="display:inline-block;margin-top:0.5rem;padding:0.8rem 1.8rem;">
+            <span>Work with me →</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════════════════ SKILLS ═══════ -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="section-label">What I Do</p>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <p class="section-sub">A battle-tested toolkit for building modern, scalable web products.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Frontend -->
+        <div class="skill-card reveal reveal-d1">
+          <div class="skill-icon ic-teal">⚛️</div>
+          <div class="skill-name">Frontend Development</div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">React.js</span>
+                <span class="skill-bar-pct">90%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="90%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">JavaScript (ES6+)</span>
+                <span class="skill-bar-pct">88%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="88%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">HTML5 / CSS3</span>
+                <span class="skill-bar-pct">95%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="95%"></div></div>
+            </div>
+          </div>
+          <div class="skill-tags-row">
+            <span class="stag">React</span>
+            <span class="stag">Redux</span>
+            <span class="stag">Next.js</span>
+            <span class="stag">Tailwind</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card reveal reveal-d2">
+          <div class="skill-icon ic-blue">🛠️</div>
+          <div class="skill-name">Backend Development</div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">Node.js / Express</span>
+                <span class="skill-bar-pct">85%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">MongoDB</span>
+                <span class="skill-bar-pct">82%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="82%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">REST APIs</span>
+                <span class="skill-bar-pct">88%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="88%"></div></div>
+            </div>
+          </div>
+          <div class="skill-tags-row">
+            <span class="stag">Node.js</span>
+            <span class="stag">Express</span>
+            <span class="stag">MongoDB</span>
+            <span class="stag">Mongoose</span>
+          </div>
+        </div>
+
+        <!-- Design -->
+        <div class="skill-card reveal reveal-d3">
+          <div class="skill-icon ic-gold">🎨</div>
+          <div class="skill-name">UI/UX Design</div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">Figma</span>
+                <span class="skill-bar-pct">85%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">Prototyping</span>
+                <span class="skill-bar-pct">80%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="80%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">Design Systems</span>
+                <span class="skill-bar-pct">75%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="75%"></div></div>
+            </div>
+          </div>
+          <div class="skill-tags-row">
+            <span class="stag">Figma</span>
+            <span class="stag">Wireframes</span>
+            <span class="stag">Components</span>
+            <span class="stag">Responsive</span>
+          </div>
+        </div>
+
+        <!-- WordPress -->
+        <div class="skill-card reveal reveal-d4">
+          <div class="skill-icon ic-amber">🌐</div>
+          <div class="skill-name">WordPress & CMS</div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">WordPress</span>
+                <span class="skill-bar-pct">87%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="87%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">Elementor / ACF</span>
+                <span class="skill-bar-pct">80%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="80%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-bar-label">WooCommerce</span>
+                <span class="skill-bar-pct">75%</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" data-width="75%"></div></div>
+            </div>
+          </div>
+          <div class="skill-tags-row">
+            <span class="stag">WordPress</span>
+            <span class="stag">WooCommerce</span>
+            <span class="stag">Elementor</span>
+            <span class="stag">PHP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════════════════ PROJECTS ═══════ -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">A selection of my best work — from MERN apps to design-led products.</p>
+      </div>
+
+      <div class="proj-filter">
+        <button class="flt-btn active" data-filter="all">All</button>
+        <button class="flt-btn" data-filter="mern">MERN Stack</button>
+        <button class="flt-btn" data-filter="fullstack">Full Stack</button>
+        <button class="flt-btn" data-filter="iot">IoT / Business</button>
+        <button class="flt-btn" data-filter="design">Creative</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Pinnacle Supermarket -->
+        <div class="proj-card reveal reveal-d1" data-category="mern">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=600&q=80" alt="Pinnacle Supermarket E-Commerce" />
+            <span class="proj-badge b-mern">MERN</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Pinnacle Supermarket — E-Commerce</h3>
+            <p class="proj-desc">A modern, full-stack e-commerce platform for a supermarket in Ibadan. Features Paystack payments, Cloudinary image uploads, order tracking, admin dashboard with role-based access, and real-time stock management.</p>
+            <div class="proj-tech">
+              <span class="p-tech">React</span>
+              <span class="p-tech">Node.js</span>
+              <span class="p-tech">MongoDB</span>
+              <span class="p-tech">Paystack</span>
+              <span class="p-tech">Cloudinary</span>
+              <span class="p-tech">JWT</span>
+            </div>
+            <div class="proj-actions">
+              <a href="https://pinnacle-cyan.vercel.app/" target="_blank" rel="noopener" class="p-link p-live">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Site
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: EASYCAM -->
+        <div class="proj-card reveal reveal-d2" data-category="iot">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="EASYCAM CCTV Website" />
+            <span class="proj-badge b-full">IoT / Business</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">EASYCAM — Smart CCTV Solutions</h3>
+            <p class="proj-desc">Professional business website for a state-of-the-art IoT solar-powered security CCTV provider. Showcases 100% wire-free smart cameras, customized quote configuration, and expert installation across Lagos, Oyo, and Ogun State.</p>
+            <div class="proj-tech">
+              <span class="p-tech">React</span>
+              <span class="p-tech">Node.js</span>
+              <span class="p-tech">IoT</span>
+              <span class="p-tech">Solar CCTV</span>
+              <span class="p-tech">Quote Config</span>
+            </div>
+            <div class="proj-actions">
+              <a href="https://easycamng.com" target="_blank" rel="noopener" class="p-link p-live">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Site
+              </a>
+              <a href="https://github.com/adebowale-hub/Easycam" target="_blank" rel="noopener" class="p-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: AnonycChat -->
+        <div class="proj-card reveal reveal-d3" data-category="fullstack">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=600&q=80" alt="AnonycChat Real-Time Chat App" />
+            <span class="proj-badge b-mern">Full Stack</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">AnonycChat — Anonymous Chat App</h3>
+            <p class="proj-desc">A real-time anonymous chat application with secure Firebase authentication, Socket.io messaging, message threading, @mentions, AI assistant powered by Google Gemini, password-protected rooms, and a sleek neobrutalist dark/light theme.</p>
+            <div class="proj-tech">
+              <span class="p-tech">React 19</span>
+              <span class="p-tech">Socket.io</span>
+              <span class="p-tech">Firebase</span>
+              <span class="p-tech">Node.js</span>
+              <span class="p-tech">Gemini AI</span>
+              <span class="p-tech">Vite</span>
+            </div>
+            <div class="proj-actions">
+              <a href="https://anonychat.fun" target="_blank" rel="noopener" class="p-link p-live">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Site
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Scrollytelling Portfolio -->
+        <div class="proj-card reveal reveal-d1" data-category="design">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Scrollytelling Photography Portfolio" />
+            <span class="proj-badge b-design">Creative</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Scrollytelling Photography Portfolio</h3>
+            <p class="proj-desc">A stunning dark-mode photography portfolio template with scroll-driven storytelling animations. Perfect for photographers who want to showcase their work with a cinematic, narrative focus.</p>
+            <div class="proj-tech">
+              <span class="p-tech">React</span>
+              <span class="p-tech">Scroll Animation</span>
+              <span class="p-tech">Dark Mode</span>
+              <span class="p-tech">Vercel</span>
+            </div>
+            <div class="proj-actions">
+              <a href="https://scrollytelling-portfolio.vercel.app/" target="_blank" rel="noopener" class="p-link p-live">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: HubPulse -->
+        <div class="proj-card reveal reveal-d2" data-category="fullstack">
+          <div class="proj-thumb">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="HubPulse University Social Platform" />
+            <span class="proj-badge b-full">In Progress</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">HubPulse — University Social Platform</h3>
+            <p class="proj-desc">A hyper-localized, visually engaging social media platform designed exclusively for university students. Features campus-specific feeds, student communities, events, and real-time interactions. <em style="color:var(--gold);font-style:normal;font-size:0.78rem;">Work in progress</em></p>
+            <div class="proj-tech">
+              <span class="p-tech">React</span>
+              <span class="p-tech">Node.js</span>
+              <span class="p-tech">MongoDB</span>
+              <span class="p-tech">Socket.io</span>
+              <span class="p-tech">Mobile-First</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" class="p-link" style="opacity:0.5;pointer-events:none;cursor:default;">Coming Soon</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════════════════════ CONTACT ═══════ -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <!-- Left -->
+        <div class="reveal">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-title">Let's build something<br/>amazing together</h2>
+          <p class="contact-lede">
+            Whether you need a full-stack MERN application, a Figma prototype, or a WordPress site — 
+            I'm here to help. Let's talk about your next project.
+          </p>
+
+          <div class="c-item">
+            <div class="c-icon">📧</div>
+            <div>
+              <div class="c-lbl">Email</div>
+              <div class="c-val">adebowale@email.com</div>
+            </div>
+          </div>
+
+          <div class="c-item">
+            <div class="c-icon">📍</div>
+            <div>
+              <div class="c-lbl">Location</div>
+              <div class="c-val">Nigeria — Available Globally</div>
+            </div>
+          </div>
+
+          <div class="c-item">
+            <div class="c-icon">⏰</div>
+            <div>
+              <div class="c-lbl">Availability</div>
+              <div class="c-val">Open to freelance &amp; full-time roles</div>
+            </div>
+          </div>
+
+          <div class="socials">
+            <a href="#" class="soc-link" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </a>
+            <a href="#" class="soc-link" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="soc-link" title="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="#" class="soc-link" title="Figma">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5 5.5A3.5 3.5 0 018.5 2H12v7H8.5A3.5 3.5 0 015 5.5zM12 2h3.5a3.5 3.5 0 110 7H12V2zm-6.5 10A3.5 3.5 0 018.5 9H12v7H8.5A3.5 3.5 0 015 12.5zM12 16h3.5a3.5 3.5 0 110 7H12v-7zm-7 4.5A3.5 3.5 0 018.5 17H12v.085A3.5 3.5 0 015 20.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="reveal reveal-d2">
+          <form class="c-form" id="contact-form">
+            <div class="f-row">
+              <div class="f-group">
+                <label class="f-lbl" for="name">Your Name</label>
+                <input class="f-input" id="name" type="text" placeholder="John Doe" required />
+              </div>
+              <div class="f-group">
+                <label class="f-lbl" for="email">Email Address</label>
+                <input class="f-input" id="email" type="email" placeholder="john@email.com" required />
+              </div>
+            </div>
+            <div class="f-group">
+              <label class="f-lbl" for="subject">Subject</label>
+              <input class="f-input" id="subject" type="text" placeholder="Project Discussion" required />
+            </div>
+            <div class="f-group">
+              <label class="f-lbl" for="message">Message</label>
+              <textarea class="f-textarea" id="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="f-submit">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══════ -->
+  <footer>
+    <div class="f-copy">© 2025 Adebowale. All rights reserved.</div>
+    <div class="f-made">Crafted with <span>♥</span> &amp; Van Gogh energy</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
